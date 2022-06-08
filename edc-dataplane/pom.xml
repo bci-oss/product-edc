@@ -84,7 +84,7 @@
         </dependency>
 
         <!-- Vault -->
-        <dependency>
+        <!-- <dependency>
             <groupId>org.eclipse.dataspaceconnector</groupId>
             <artifactId>azure-vault</artifactId>
             <exclusions>
@@ -97,7 +97,7 @@
                     <artifactId>azure-identity</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
+        </dependency> -->
 
         <!-- APIs -->
         <dependency>
@@ -155,14 +155,14 @@
         </dependency>
 
         <!-- Other -->
-        <dependency>
+        <!-- <dependency>
             <groupId>com.azure</groupId>
             <artifactId>azure-identity</artifactId>
         </dependency>
         <dependency>
             <groupId>com.azure</groupId>
             <artifactId>azure-security-keyvault-secrets</artifactId>
-        </dependency>
+        </dependency> -->
     </dependencies>
 
     <profiles>

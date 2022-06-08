@@ -99,13 +99,14 @@
         </dependency>
 
         <!-- Security -->
+        <!---->
         <dependency>
             <groupId>org.eclipse.dataspaceconnector</groupId>
             <artifactId>auth-tokenbased</artifactId>
-        </dependency>
+        </dependency> 
 
         <!-- Vault -->
-        <dependency>
+        <!-- <dependency>
             <groupId>org.eclipse.dataspaceconnector</groupId>
             <artifactId>azure-vault</artifactId>
             <exclusions>
@@ -118,8 +119,12 @@
                     <artifactId>azure-identity</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency> -->
+        <!-- azure-vault is replaced with this one -->
+        <dependency>
+            <groupId>org.eclipse.dataspaceconnector</groupId>
+            <artifactId>filesystem-vault</artifactId>
         </dependency>
-
         <!-- APIs -->
         <dependency>
             <groupId>org.eclipse.dataspaceconnector</groupId>
@@ -162,8 +167,12 @@
         <dependency>
             <groupId>org.eclipse.dataspaceconnector</groupId>
             <artifactId>ids-token-validation</artifactId>
-        </dependency>
-
+        </dependency> 
+        <!-- Required to mock daps -->
+        <dependency>
+            <groupId>org.eclipse.dataspaceconnector</groupId>
+            <artifactId>iam-mock</artifactId>
+        </dependency> 
         <!-- Stores -->
         <dependency>
             <groupId>org.eclipse.dataspaceconnector</groupId>
@@ -211,14 +220,14 @@
         </dependency>
 
         <!-- IAM -->
-        <dependency>
+        <!-- <dependency>
             <groupId>org.eclipse.dataspaceconnector</groupId>
             <artifactId>oauth2-core</artifactId>
         </dependency>
         <dependency>
             <groupId>org.eclipse.dataspaceconnector</groupId>
             <artifactId>iam-daps</artifactId>
-        </dependency>
+        </dependency> -->
 
         <!-- Telemetry -->
         <dependency>
@@ -263,14 +272,15 @@
         </dependency>
 
         <!-- Other -->
-        <dependency>
+      
+        <!-- <dependency>
             <groupId>com.azure</groupId>
             <artifactId>azure-identity</artifactId>
         </dependency>
         <dependency>
             <groupId>com.azure</groupId>
             <artifactId>azure-security-keyvault-secrets</artifactId>
-        </dependency>
+        </dependency> -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
